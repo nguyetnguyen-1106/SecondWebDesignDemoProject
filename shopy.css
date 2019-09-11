@@ -1,0 +1,98 @@
+.header{
+	grid-area: header;
+}
+.tops{
+	grid-area: tops;
+}
+.nevigation{
+	grid-area: nevigation;
+	background-color: green;
+}
+.menu {
+	grid-area: menu;
+	background-color: white;
+}
+.main {
+	grid-area: main;
+	background-color: yellow;
+}
+.about{
+	grid-area: about;
+	background-color: blue;
+}
+
+.bot{
+	grid-area: bot;
+	background-color: orange;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: pink;
+}
+.grid-border{
+	display: grid;
+	grid-template-areas:
+		'header header '
+		'tops tops'
+		'nevigation nevigation'
+		'menu  main'
+		'about about'
+		'bot bot'
+		'footer footer';
+}
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	border-bottom: 3px solid #dcdcdc
+}
+* {
+ 	margin: 0;
+ 	padding: 0;
+}
+
+.block-header ul {
+  	list-style-type: none;
+  	text-align: center;
+
+}
+.block-header li {
+ 	display: inline-block;
+  	width: 110px;
+  	height: 30px;
+  	border-right: 1px solid #dcdcdc
+}
+.block-header a {
+	display: block;
+ 	color: black;
+  	text-decoration: none;
+}
+.left{
+	grid-area: lefts;
+	width: 25%
+	margin-top: 20px;
+	text-align: center;
+
+}
+.center{
+	grid-area: centers;
+	width: 50%;	
+	margin-top: 20px;
+}
+.right{
+	grid-area: rights;
+	width: 25%	
+	margin-top: 10px;
+}
+.grid-top{
+	display: grid;
+	grid-template-areas: 'lefts centers rights';
+}
+.forms{
+	display: inline-block;
+	padding: 12px 20px;
+	margin: 8px 0;
+  	box-sizing: border-box;
+
+}
